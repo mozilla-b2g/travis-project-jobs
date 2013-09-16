@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Manage multiple job setups for travis ci builds",
   "main": "index.js",
+  "bin": {
+    "travisaction": "./bin/travisaction"
+  },
   "scripts": {
     "test": "make test"
   },
@@ -19,6 +22,7 @@
     "mocha": "~1.13.0"
   },
   "dependencies": {
-    "commander": "~2.0.0"
+    "commander": "~2.0.0",
+    "debug": "~0.7.2"
   }
 }
