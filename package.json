@@ -1,0 +1,24 @@
+{
+  "name": "travis-project-jobs",
+  "version": "0.0.0",
+  "description": "Manage multiple job setups for travis ci builds",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mozilla-b2g/travis-project-jobs.git"
+  },
+  "author": "",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/mozilla-b2g/travis-project-jobs/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0"
+  },
+  "dependencies": {
+    "commander": "~2.0.0"
+  }
+}
