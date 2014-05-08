@@ -1,7 +1,11 @@
 language: node_js
 node_js:
   - '0.10'
-before_install: "npm install && ./bin/travisaction $CI_ACTION before_install"
+before_install:
+  - mkdir -p "$HOME"/.local/lib/python2.7/site-packages
+  - 'export PATH="$HOME/.local/bin:$PATH"'
+  - 'export PYTHONPATH="$HOME"/.local/lib/python2.7/site-packages:"$PYTHONPATH"'
+  - 'npm install && ./bin/travisaction $CI_ACTION before_install'
 script: "./bin/travisaction $CI_ACTION script"
 env:
   - CI_ACTION="mocha"
